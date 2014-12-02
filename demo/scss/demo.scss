@@ -1,0 +1,27 @@
+@import 'bskyb-colours/scss/colours';
+
+
+.demo-hex{
+  text-align: left;
+  margin-bottom:10px;
+}
+.mobile-size{
+  color: #5cacb6;
+}
+.inactive .mobile-size{
+  color: #A9C7CA;
+}
+.demo-pink{
+  color: $colour-v3-pink;
+}
+
+.smash-img {
+  background-image: url("../../images/smash.jpg");
+  padding: 80px 50px;
+  margin-bottom: 10px;
+}
+.beckham-img {
+  background-image: url("../../images/beckham.jpg");
+  padding: 80px 50px;
+  margin-bottom: 10px;
+}

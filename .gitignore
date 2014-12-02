@@ -1,0 +1,28 @@
+########################
+# node.js / npm
+########################
+*.log
+*.out
+*.pid
+*.gz
+pids
+logs
+results
+node_modules
+npm-debug.log
+
+bower_components
+_site
+
+########################
+# misc / editors
+########################
+*~
+*#
+.DS_STORE
+.tmp
+.netbeans
+nbproject
+.idea
+*.iml
+
