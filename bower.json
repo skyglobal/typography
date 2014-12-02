@@ -1,11 +1,11 @@
 {
-    "name": "bskyb-skycons",
-    "version": "0.0.4",
-    "homepage": "https://github.com/skyglobal/skycons",
+    "name": "bskyb-typography",
+    "version": "0.0.1",
+    "homepage": "https://github.com/skyglobal/typography",
     "authors": [
         "Peter Mouland <peter.mouland@gmail.com>"
     ],
-    "description": "A collection of brand approved icons for use across Sky.com",
+    "description": "A collection of brand approved fonts for use across Sky.com",
     "main": "dist",
     "license": "MIT",
     "ignore": [
