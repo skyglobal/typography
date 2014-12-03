@@ -1,7 +1,7 @@
 {
   "name": "typography",
-  "version": "0.0.4",
-  "description": "Fonts for Sky",
+  "version": "0.0.1",
+  "description": "Typography for Sky",
   "main": "index.js",
   "devDependencies": {
     "browser-sync": "^1.5.9",
