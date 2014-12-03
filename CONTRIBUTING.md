@@ -33,10 +33,15 @@ If you would like the feature to go live sooner, mention this in the comments/co
 
 ## Running Locally
 
- * `gulp serve` :  Run Jekyll on port 3456
+ * `gulp serve` :  Run server on port 3456
  
 ## Releasing (admin only)
 
+### first time only
+ * initialise gh-pages using using : https://www.npmjs.org/package/gulp-gh-pages
+ * Register bower using : http://bower.io/docs/creating-packages/#register
+ 
+### All Releases
  * Update [package.json](package.json) version number appropriately
  * `gulp release:gh-pages` : push the latest version to gh-pages
  * `gulp release:bower` : release the code to bower

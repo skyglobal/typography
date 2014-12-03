@@ -103,7 +103,18 @@ gulp.task('copy-fonts', function() {
         .pipe(gulp.dest(paths.site + '/fonts/'));
 });
 
+function awsUpload(fileType){
+    var path = 'components/' + pkg.name.replace('bskyb-','') + '/' + pkg.version + '/' + fileType + '/';
+    return gulp.src(paths.dist[fileType] + '/**/*')
+        .pipe(aws_s3.upload({ path: path } ));
 
+}
+
+gulp.task('aws', function() {
+    awsUpload('css');
+    awsUpload('js');
+    awsUpload('fonts');
+});
 
 gulp.task('build', function(cb) {
     return runSequence(['copy-fonts','create-site','bower'],['sass'],['create-bower-dist'],
@@ -131,6 +142,15 @@ gulp.task('release:gh-pages', function(cb) {
     return runSequence(
         'build',
         'gh-pages',
+        cb
+    );
+});
+
+
+gulp.task('release:cdn', function(cb) {
+    return runSequence(
+        'build',
+        'aws',
         cb
     );
 });
