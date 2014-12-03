@@ -1,8 +1,8 @@
 @import 'bskyb-colours/scss/colours';
 
-@import '../fonts/sky-text-regular';
-@import '../fonts/sky-text-medium';
-@import '../fonts/luna';
+@import 'sky-text-regular';
+@import 'sky-text-medium';
+@import 'luna';
 
 body {
   font: 16px/20px $font-family;
