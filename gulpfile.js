@@ -12,12 +12,13 @@ var runSequence = require('run-sequence');
 var pkg = require('./package.json');
 var aws_s3 = require('gulp-aws-s3').setup({bucket: process.env.AWS_SKYGLOBAL_BUCKET});
 
-var flatten = require('gulp-flatten');
-
-var path = require("path");
-
 var paths = {
-    "site": './_site',
+    "site": {
+        html: './_site',
+        css: './_site/css',
+        images: './_site/images',
+        fonts: './_site/fonts'
+    },
     "demo": {
         html: "./demo",
         sass: './demo/scss',
@@ -28,6 +29,7 @@ var paths = {
         fonts: './src/fonts'
     },
     dist : {
+        sass: "./dist/scss",
         css: "./dist/css",
         js: "./dist/js",
         fonts: './dist/fonts'
@@ -42,7 +44,7 @@ gulp.task('sass', function() {
             outputStyle: 'nested'
         }))
         .pipe(autoprefixer())
-        .pipe(gulp.dest(paths.site + '/css'))
+        .pipe(gulp.dest(paths.site['css']))
         .pipe(browserSync.reload({stream:true}));
 });
 
@@ -51,7 +53,7 @@ gulp.task('bower', function() {
 });
 
 gulp.task('gh-pages', function () {
-    gulp.src(paths.site + "/**/*")
+    gulp.src(paths.site['html'] + "/**/*")
         .pipe(deploy({
             cacheDir: '.tmp'
         })).pipe(gulp.dest('/tmp/gh-pages'));
@@ -65,13 +67,13 @@ gulp.task('browserSync', function() {
     browserSync({
         port: 3456,
         server: {
-            baseDir: paths.site
+            baseDir: paths.site['html']
         }
     });
 });
 
 gulp.task('watch', function() {
-    gulp.watch(paths.site, ['create-site']);
+    gulp.watch(paths.site['html'], ['create-site']);
     gulp.watch([paths.source['sass'] + '/**/*',paths.demo['sass']], ['sass']);
 });
 
@@ -79,29 +81,26 @@ gulp.task('create-site', function() {
     gulp.src([paths.demo['html'] + '/index.html',
             paths.demo['html'] +'/_includes/*.html'])
         .pipe(concat('index.html'))
-        .pipe(gulp.dest(paths.site));
+        .pipe(gulp.dest(paths.site['html']));
+
     gulp.src(paths.demo['images'] + '/**/*')
-        .pipe(gulp.dest(paths.site + '/images'));
+        .pipe(gulp.dest(paths.site['images']));
+
+    gulp.src(paths.source['fonts'] + '/**/*')
+        .pipe(gulp.dest(paths.site['fonts']));
 });
 
-
+function copyDir(location, fileType){
+    var files = (fileType === 'css') ? '/main.css' : '/**/*';
+    return gulp.src([paths[location][fileType] + files])
+        .pipe(gulp.dest(paths.dist[fileType]));
+}
 gulp.task('create-bower-dist', function() {
-    gulp.src([paths.site + '/css/typography.css'])
-        .pipe(gulp.dest(paths.dist['css']));
-
-    gulp.src([paths.source['fonts'] + '/**/*'])
-        .pipe(flatten())
-        .pipe(gulp.dest(paths.dist['fonts']));
-
+    copyDir('site', 'css');
+    copyDir('source','fonts');
+    return copyDir('source','sass');
 });
 
-gulp.task('copy-fonts', function() {
-    return gulp.src([
-            paths.source['fonts'] + '/*.svg',
-            paths.source['fonts'] + '/*.eot',
-            paths.source['fonts'] + '/*.ttf'])
-        .pipe(gulp.dest(paths.site + '/fonts/'));
-});
 
 function awsUpload(fileType){
     var path = 'components/' + pkg.name.replace('bskyb-','') + '/' + pkg.version + '/' + fileType + '/';
@@ -109,7 +108,6 @@ function awsUpload(fileType){
         .pipe(aws_s3.upload({ path: path } ));
 
 }
-
 gulp.task('aws', function() {
     awsUpload('css');
     awsUpload('js');
@@ -117,7 +115,7 @@ gulp.task('aws', function() {
 });
 
 gulp.task('build', function(cb) {
-    return runSequence(['copy-fonts','create-site','bower'],['sass'],['create-bower-dist'],
+    return runSequence(['create-site','bower'],['sass'],['create-bower-dist'],
         cb
     );
 });
