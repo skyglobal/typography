@@ -1,7 +1,7 @@
 [Typography](http://skyglobal.github.io/typography/) 
 ========================
 
-> A collection of brand approved fonts for use across Sky.com
+> Brand approved typography for use across Sky.com
 
 See http://skyglobal.github.io/typography/ for a demo
 
