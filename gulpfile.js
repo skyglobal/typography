@@ -40,7 +40,7 @@ gulp.task('sass', function() {
     browserSync.notify('<span style="color: grey">Running:</span> Sass compiling');
     return gulp.src([ paths.demo['sass'] + '/**/*.scss', paths.source['sass'] + '/**/*.scss'])
         .pipe(sass({
-            includePaths: ['bower_components', paths.source['fonts']],
+            includePaths: ['bower_components'],
             outputStyle: 'nested'
         }))
         .pipe(autoprefixer())
