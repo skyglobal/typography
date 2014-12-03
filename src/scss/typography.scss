@@ -13,6 +13,37 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+p {
+  line-height: 20px;
+}
+
+small {
+  font-size: em(13);
+  line-height: em(16);
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0 0 0.5em 1.2em;
+  }
+}
+
+b,
+strong,
+.medium{
+  font-family: SkyTextMedium, $font-family;
+}
+
+a{
+  color: $link;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
 h1,
 .page-title {
   font-size: 52px;
@@ -79,40 +110,72 @@ h3.smaller,
   line-height: 24px;
 }
 
-p {
-  line-height: 20px;
-}
-
-small {
-  font-size: em(13);
-  line-height: em(16);
-}
-.supportive {
+.supportive {/* deprecate .supportive */
   font-size: 13px;
   line-height: 16px;
 }
 
-.legal {
+.legal,/* deprecate .legal in favour of bem .text--legal */
+.text--legal {
   font-size: 13px;
   line-height: 1em;
   color: $secondary;
 }
 
-ol, ul {
-  margin: 0;
-  padding: 0;
+.instructions,/* deprecate .instructions in favour of bem .text--instructions */
+.text--instructions  {
+  font-family: Luna,SkyTextRegular;
+  font-size: 24px;
+  line-height: 40px;
 }
 
-ul li ,
-ol li {
-  margin: 0 0 0.5em 1.2em;
+.error, /* deprecate .error in favour of bem .text--error */
+.text--error {
+  color: $error;
+  a {
+    color: $secondary;
+  }
 }
 
-ul.grey-bullets {
+.secondary, /* deprecate .secondary in favour of bem .text--secondary */
+.text--secondary{
+  color: $secondary;
+  a {
+    color: $secondary;
+  }
+}
+
+.inactive, /* deprecate .inactive in favour of bem .text--inactive */
+.text--inactive{
+  color: $inactive;
+  a {
+    color: $inactive;
+  }
+}
+
+.white, /* deprecate .white in favour of bem .text--white */
+.text--white {
+  color: $white;
+  a {
+    color: $white;
+  }
+}
+
+.black, /* deprecate .black in favour of bem .text--black */
+.text--black {
+  color: $primary;
+  a {
+    color: $primary;
+  }
+}
+
+.grey-bullets,/*deprecate .grey-bullets in favour of bem .list--grey */
+.list--grey {
   list-style: none;
 
-  li {
+  > * {
     position: relative;
+    margin: 0 0 0.5em 1.2em;
 
     &:before {
       content: '•';
@@ -126,41 +189,7 @@ ul.grey-bullets {
   }
 }
 
-.instructions {
-  font-family: Luna,SkyTextRegular;
-  font-size: 24px;
-  line-height: 40px;
-}
-
-.error {
-  color: $error;
-}
-
-.secondary{
-  color: $secondary;
-}
-
-
-.inactive{
-  color: $inactive;
-}
-
-.white {
-  color: $white !important;
-}
-
-.black {
-  color: $primary !important;
-}
-
-b,
-strong,
-.medium{
-  font-family: SkyTextMedium, $font-family;
-}
-
 body a {
-  color: $link;
   &.chevron:before,
   .skycon-chevron {
     color: inherit;
@@ -170,8 +199,4 @@ body a {
     text-decoration: none;
     vertical-align: top;
   }
-}
-
-a:hover {
-  text-decoration: underline;
 }

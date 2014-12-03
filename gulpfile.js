@@ -72,7 +72,7 @@ gulp.task('browserSync', function() {
 
 gulp.task('watch', function() {
     gulp.watch(paths.site, ['create-site']);
-    gulp.watch([paths.source['sass'],paths.demo['sass']], ['sass']);
+    gulp.watch([paths.source['sass'] + '/**/*',paths.demo['sass']], ['sass']);
 });
 
 gulp.task('create-site', function() {

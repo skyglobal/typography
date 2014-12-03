@@ -37,6 +37,28 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
+p {
+  line-height: 20px; }
+
+small {
+  font-size: 0.8125em;
+  line-height: 1em; }
+
+ol, ul {
+  margin: 0;
+  padding: 0; }
+  ol li, ul li {
+    margin: 0 0 0.5em 1.2em; }
+
+b, strong, .medium {
+  font-family: SkyTextMedium, SkyTextRegular, Helvetica, Arial, sans-serif; }
+
+a {
+  color: #0070a5;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
 h1, .page-title {
   font-size: 52px;
   line-height: 56px;
@@ -92,34 +114,52 @@ h3.smaller, .pod-title.smaller {
   font-size: 20px;
   line-height: 24px; }
 
-p {
-  line-height: 20px; }
-
-small {
-  font-size: 0.8125em;
-  line-height: 1em; }
-
 .supportive {
+  /* deprecate .supportive */
   font-size: 13px;
   line-height: 16px; }
 
-.legal {
+.legal, .text--legal {
   font-size: 13px;
   line-height: 1em;
   color: #666666; }
 
-ol, ul {
-  margin: 0;
-  padding: 0; }
+.instructions, .text--instructions {
+  font-family: Luna, SkyTextRegular;
+  font-size: 24px;
+  line-height: 40px; }
 
-ul li, ol li {
-  margin: 0 0 0.5em 1.2em; }
+.error, .text--error {
+  color: #D21717; }
+  .error a, .text--error a {
+    color: #666666; }
 
-ul.grey-bullets {
+.secondary, .text--secondary {
+  color: #666666; }
+  .secondary a, .text--secondary a {
+    color: #666666; }
+
+.inactive, .text--inactive {
+  color: #999999; }
+  .inactive a, .text--inactive a {
+    color: #999999; }
+
+.white, .text--white {
+  color: #fff; }
+  .white a, .text--white a {
+    color: #fff; }
+
+.black, .text--black {
+  color: #333333; }
+  .black a, .text--black a {
+    color: #333333; }
+
+.grey-bullets, .list--grey {
   list-style: none; }
-  ul.grey-bullets li {
-    position: relative; }
-    ul.grey-bullets li:before {
+  .grey-bullets > *, .list--grey > * {
+    position: relative;
+    margin: 0 0 0.5em 1.2em; }
+    .grey-bullets > *:before, .list--grey > *:before {
       content: '•';
       display: block;
       position: absolute;
@@ -128,38 +168,10 @@ ul.grey-bullets {
       width: 1em;
       color: #999; }
 
-.instructions {
-  font-family: Luna, SkyTextRegular;
-  font-size: 24px;
-  line-height: 40px; }
-
-.error {
-  color: #D21717; }
-
-.secondary {
-  color: #666666; }
-
-.inactive {
-  color: #999999; }
-
-.white {
-  color: #fff !important; }
-
-.black {
-  color: #333333 !important; }
-
-b, strong, .medium {
-  font-family: SkyTextMedium, SkyTextRegular, Helvetica, Arial, sans-serif; }
-
-body a {
-  color: #0070a5; }
-  body a.chevron:before, body a .skycon-chevron {
-    color: inherit;
-    font-size: 0.75em;
-    margin-right: 6px;
-    line-height: 1.35em;
-    text-decoration: none;
-    vertical-align: top; }
-
-a:hover {
-  text-decoration: underline; }
+body a.chevron:before, body a .skycon-chevron {
+  color: inherit;
+  font-size: 0.75em;
+  margin-right: 6px;
+  line-height: 1.35em;
+  text-decoration: none;
+  vertical-align: top; }
