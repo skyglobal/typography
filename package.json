@@ -1,12 +1,12 @@
 {
   "name": "typography",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Typography for Sky",
   "main": "index.js",
   "devDependencies": {
     "browser-sync": "^1.5.9",
     "gulp": "^3.8.8",
-    "gulp-sky-component-helper": "^0.0.1",
+    "gulp-sky-component-helper": "^0.0.4-rc1",
     "path": "^0.4.9",
     "run-sequence": "^1.0.1"
   },
