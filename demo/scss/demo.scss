@@ -1,10 +1,16 @@
 @import 'bskyb-colours/scss/colours';
 @import 'bskyb-skycons/dist/skycons';
 
-
+/* Common demo Sass here */
 .demo-block{
   display: block;
 }
+.demo-updated {
+  display: block;
+  font-size: 0.3em;
+}
+
+//your demo specific scss here
 .demo-hex{
   text-align: left;
   margin-bottom:10px;
