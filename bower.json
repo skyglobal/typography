@@ -6,7 +6,7 @@
     "Peter Mouland <peter.mouland@gmail.com>"
   ],
   "description": "A collection of brand approved fonts for use across Sky.com",
-  "main": "dist",
+  "main": "dist/scss/typography.scs",
   "license": "MIT",
   "ignore": [
     "**/*",
