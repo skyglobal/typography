@@ -9,7 +9,7 @@ See http://skyglobal.github.io/typography/ for a demo
 
 ### As CSS
 
-http://web-toolkit.global.sky.com/components/typography/0.0.2/dist/css/typography.css
+http://web-toolkit.global.sky.com/components/typography/0.0.3/dist/css/typography.css
 
 ### As a Sass Module
 
