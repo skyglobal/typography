@@ -233,7 +233,7 @@ body .hover-colour:hover .skycon-whatsapp, body .colour.skycon-whatsapp {
   height: 20px; }
 
 .demo-icon--github {
-  background: url(/images/GitHub-Mark-32px.png) no-repeat 0px 0px;
+  background: url(../images/GitHub-Mark-32px.png) no-repeat 0px 0px;
   background-size: 100%; }
 
 .speak {
