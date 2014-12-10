@@ -9,7 +9,12 @@ See http://skyglobal.github.io/typography/ for a demo
 
 ### As CSS
 
-http://web-toolkit.global.sky.com/components/typography/0.0.3/dist/css/typography.css
+http://web-toolkit.global.sky.com/components/typography/0.0.4/dist/css/typography.css
+
+You can also replace `typography.css` with the specific font you are after:
+ * luna.css
+ * sky-text-medium.css
+ * sky-text-regular.css
 
 ### As a Sass Module
 
@@ -21,7 +26,7 @@ http://web-toolkit.global.sky.com/components/typography/0.0.3/dist/css/typograph
 
 ## Contribution
 
-BSkyB components depends on collaboration between developers across Sky. Contributions of any size are actively encouraged.
+Components depends on collaboration between developers. Contributions of any size are actively encouraged.
 
 [Read More >](CONTRIBUTING.md)
 

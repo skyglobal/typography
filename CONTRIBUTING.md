@@ -15,7 +15,7 @@ To build the toolkit locally, you'll need to install:
 
 1. Fork the project
 2. Clone down your fork
-`git clone git://github.com/<username>/typography.git`
+`git clone git://github.com/skyglobal/typography.git`
 3. Setup your 'upstream'
 `git remote add upstream https://github.com/skyglobal/typography.git`
 4. Create a topic branch to contain your change
