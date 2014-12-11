@@ -25,9 +25,6 @@ small {
 ol, ul {
   margin: 0;
   padding: 0;
-  li {
-    margin: 0 0 0.5em 1.2em;
-  }
 }
 
 b,
@@ -169,13 +166,16 @@ h3.smaller,
   }
 }
 
+.list > * {
+  margin: 0 0 0.5em 1.2em;
+}
+
 .grey-bullets,/*deprecate .grey-bullets in favour of bem .list--grey */
 .list--grey {
   list-style: none;
 
   > * {
     position: relative;
-    margin: 0 0 0.5em 1.2em;
 
     &:before {
       content: '•';
