@@ -154,11 +154,13 @@ h3.smaller, .pod-title.smaller {
   .black a, .text--black a {
     color: #333333; }
 
+.list > * {
+  margin: 0 0 0.5em 1.2em; }
+
 .grey-bullets, .list--grey {
   list-style: none; }
   .grey-bullets > *, .list--grey > * {
-    position: relative;
-    margin: 0 0 0.5em 1.2em; }
+    position: relative; }
     .grey-bullets > *:before, .list--grey > *:before {
       content: '•';
       display: block;
