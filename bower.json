@@ -6,14 +6,14 @@
     "Peter Mouland <peter.mouland@gmail.com>"
   ],
   "description": "A collection of brand approved fonts for use across Sky.com",
-  "main": "dist/scss/typography.scs",
+  "main": "dist/scss/typography.scss",
   "license": "MIT",
   "ignore": [
     "**/*",
     "!dist/**/*"
   ],
   "dependencies": {
-    "bskyb-colours": "~0.0.8"
+    "bskyb-colours": "~0.0.9"
   },
   "devDependencies": {
     "bskyb-skycons": "~0.0.6"

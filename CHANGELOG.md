@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.6
+
+ * Update consumed Sass to point directly to bower_components
+
 ## 0.0.5
 
  * Update global lists (only apply li margin to elements with `.list`)
