@@ -41,14 +41,12 @@ p {
   line-height: 20px; }
 
 small {
-  font-size: 0.8125em;
-  line-height: 1em; }
+  font-size: em(13);
+  line-height: em(16); }
 
 ol, ul {
   margin: 0;
   padding: 0; }
-  ol li, ul li {
-    margin: 0 0 0.5em 1.2em; }
 
 b, strong, .medium {
   font-family: SkyTextMedium, SkyTextRegular, Helvetica, Arial, sans-serif; }
