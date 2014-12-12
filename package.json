@@ -1,6 +1,6 @@
 {
   "name": "typography",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Typography for Sky",
   "main": "index.js",
   "devDependencies": {
