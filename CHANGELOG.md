@@ -1,6 +1,6 @@
 # Change Log
 
-## 0.0.7
+## 0.1.0
 
  * Updated directories used within bower to `src` and `dist`
  * Added `internal-link` to classes and examples
