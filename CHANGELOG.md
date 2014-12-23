@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.0.7
+
+ * Updated directories used within bower to `src` and `dist`
+ * Added `internal-link` to classes and examples
+
 ## 0.0.6
 
  * Update consumed Sass to point directly to bower_components
