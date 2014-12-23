@@ -13,6 +13,7 @@ npm-debug.log
 
 bower_components
 _site
+dist/fonts
 
 ########################
 # misc / editors
