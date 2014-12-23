@@ -34,7 +34,7 @@ ol, ul {
 b,
 strong,
 .medium{
-  font-family: SkyTextMedium, $font-family;
+  font-family: $font-family-medium;
 }
 
 a{
@@ -204,4 +204,11 @@ body a {
     vertical-align: top;
     float: left;
   }
+}
+
+
+.internal-link{
+  color: $primary;
+  outline: 0!important;
+  border: 0;
 }
