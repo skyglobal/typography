@@ -14,7 +14,8 @@
     "!src/**/*"
   ],
   "devDependencies": {
-    "bskyb-grid": "~0.1.0"
+    "bskyb-grid": "~0.1.0",
+    "bskyb-skycons": "~0.2.0"
   },
   "dependencies": {
     "bskyb-colours": "~0.1.0"
