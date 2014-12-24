@@ -1,4 +1,4 @@
-@import 'bower_components/bskyb-colours/dist/scss/colours';
+@import 'bower_components/bskyb-colours/src/scss/colours';
 
 @import 'sky-text-regular';
 @import 'sky-text-medium';
@@ -37,12 +37,18 @@ strong,
   font-family: $font-family-medium;
 }
 
-a{
+a,
+.link{
   color: $link;
   text-decoration: none;
   &:hover{
     text-decoration: underline;
   }
+}
+
+.link--internal{
+  outline: 0!important;
+  border: 0;
 }
 
 h1,
@@ -111,7 +117,7 @@ h3.smaller,
   line-height: 24px;
 }
 
-.supportive {/* deprecate .supportive */
+.supportive {/* deprecate .supportive - removed from demo! */
   font-size: 13px;
   line-height: 16px;
 }
@@ -195,7 +201,8 @@ h3.smaller,
 
 body a {
   &.chevron:before,
-  .skycon-chevron {
+  .skycon-chevron,
+  .skycon--chevron {
     color: inherit;
     font-size: 0.75em;
     margin-right:6px;
@@ -206,9 +213,3 @@ body a {
   }
 }
 
-
-.internal-link{
-  color: $primary;
-  outline: 0!important;
-  border: 0;
-}

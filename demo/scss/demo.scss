@@ -1,5 +1,6 @@
-@import 'bower_components/bskyb-colours/dist/scss/colours';
-@import 'bower_components/bskyb-skycons/dist/scss/skycons';
+@import 'bower_components/bskyb-grid/src/scss/grid';
+@import 'bower_components/bskyb-colours/src/scss/colours';
+//@import 'bower_components/bskyb-skycons/dist/scss/skycons';
 
 /* Common demo Sass here */
 .demo-block{
@@ -34,6 +35,21 @@
   display: block;
 }
 
+code{
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+}
+
+
+
+
+
 //your demo specific scss here
 .demo-hex{
   text-align: left;
@@ -51,11 +67,21 @@
 
 .demo-smash-img {
   background-image: url("../images/smash.jpg");
-  padding: 80px 50px;
+  padding: 15px;
   margin-bottom: 10px;
+  background-size: 100%;
+  width: 50%;
+  p{
+    margin: 0;
+  }
 }
 .demo-beckham-img {
   background-image: url("../images/beckham.jpg");
-  padding: 80px 50px;
+  padding: 15px;
   margin-bottom: 10px;
+  background-size: 100%;
+  width: 50%;
+  p{
+    margin: 0;
+  }
 }
