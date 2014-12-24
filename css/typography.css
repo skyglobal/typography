@@ -51,11 +51,15 @@ ol, ul {
 b, strong, .medium {
   font-family: SkyTextMedium, Helvetica, Arial, sans-serif; }
 
-a {
+a, .link {
   color: #0070a5;
   text-decoration: none; }
-  a:hover {
+  a:hover, .link:hover {
     text-decoration: underline; }
+
+.link--internal {
+  outline: 0 !important;
+  border: 0; }
 
 h1, .page-title {
   font-size: 52px;
@@ -113,7 +117,7 @@ h3.smaller, .pod-title.smaller {
   line-height: 24px; }
 
 .supportive {
-  /* deprecate .supportive */
+  /* deprecate .supportive - removed from demo! */
   font-size: 13px;
   line-height: 16px; }
 
@@ -168,7 +172,7 @@ h3.smaller, .pod-title.smaller {
       width: 1em;
       color: #999; }
 
-body a.chevron:before, body a .skycon-chevron {
+body a.chevron:before, body a .skycon-chevron, body a .skycon--chevron {
   color: inherit;
   font-size: 0.75em;
   margin-right: 6px;
@@ -176,8 +180,3 @@ body a.chevron:before, body a .skycon-chevron {
   text-decoration: none;
   vertical-align: top;
   float: left; }
-
-.internal-link {
-  color: #333333;
-  outline: 0 !important;
-  border: 0; }

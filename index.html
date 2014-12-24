@@ -5,8 +5,11 @@
     <title>Typography</title>
     <link rel="stylesheet" href="css/demo.css"/>
     <link rel="stylesheet" href="css/typography.css"/>
+    <!--<link rel="stylesheet" href="http://web-toolkit.global.sky.com/components/skycons/0.1.0/css/skycons.css"/>-->
+    <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/prod-sky-web-toolkit/components/skycons/0.1.0/css/skycons.css"/>
 </head>
 <body>
+<div class="skycom-container">
 
     <h1 id="typography">Typography
         <small  class="demo-version text--secondary">v0.1.0
@@ -66,11 +69,10 @@
     <small class="demo-block">'Small' text (relative to container)</small>
 
     <p>
-        <a href="#">In page action link</a>
+        <a class="link--internal" href="#">Link to a different location (same page)</a>
     </p>
-
     <p >
-        <a href="#" ><i class="skycon-chevron"></i>Link with a chevron</a>
+        <a href="#" ><i class="skycon skycon--chevron"></i>Link to a different page (with a chevron)</a>
     </p>
 
     <div class="demo-smash-img text--white">
@@ -95,9 +97,6 @@
         <li>Ordered list item</li>
         <li>Ordered list item</li>
     </ol>
-
-    <p>
-       <a class="internal-link" href="#typography">A link used to go to another location on the same page (internal-link)</a>
-    </p>
+</div>
 </body>
 </html>

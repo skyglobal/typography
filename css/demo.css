@@ -1,224 +1,295 @@
-/*../fonts/*/
-@font-face {
-  font-family: "skycons";
-  src: url('../fonts/skycons.eot');
-  src: url('../fonts/skycons.eot?#iefix') format('eot'), url('../fonts/skycons.woff') format('woff'), url('../fonts/skycons.ttf') format('truetype'), url('../fonts/skycons.svg#skycons') format('svg'); }
+/* returns the width of that coloumn count */
+body {
+  margin: 0;
+  padding: 0; }
 
-[class^="skycon-"], [class*="skycon-"], .skycon {
-  color: #333;
-  font-size: 16px;
-  line-height: 1.125em; }
+.skycom-container {
+  width: 94.05941%;
+  max-width: 1140px;
+  margin: 0 auto;
+  clear: left;
+  overflow: visible; }
 
-[class^="skycon-"]:before, [class*="skycon-"]:before, .skycon:before {
-  font-family: "skycons";
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 1;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+.grid-974 .skycom-container {
+  max-width: 974px; }
 
-.skycon-arrow-down-left:before, .skycon--arrow-down-left:before {
-  content: "\E001"; }
+.skycom-12, .skycom-11, .skycom-10, .skycom-9, .skycom-8, .skycom-7, .skycom-6, .skycom-5, .skycom-4, .skycom-3, .skycom-2, .skycom-1 {
+  float: left;
+  margin-left: 3.15789%; }
 
-.skycon-arrow-left:before, .skycon--arrow-left:before {
-  content: "\E002"; }
+.right {
+  float: right !important; }
 
-.skycon-arrow-right:before, .skycon--arrow-right:before {
-  content: "\E003"; }
+.clear {
+  clear: both; }
 
-.skycon-at:before, .skycon--at:before {
-  content: "\E004"; }
+.alpha, .skycom-12:first-child, .skycom-11:first-child, .skycom-10:first-child, .skycom-9:first-child, .skycom-8:first-child, .skycom-7:first-child, .skycom-6:first-child, .skycom-5:first-child, .skycom-4:first-child, .skycom-3:first-child, .skycom-2:first-child, .skycom-1:first-child {
+  margin-left: 0;
+  clear: left; }
 
-.skycon-calender:before, .skycon--calender:before {
-  content: "\E005"; }
+.skycom-12 .cushioned {
+  padding: 1.75439%; }
 
-.skycon-carousel-pause:before, .skycon--carousel-pause:before {
-  content: "\E006"; }
+.skycom-12 {
+  width: 100%; }
 
-.skycon-carousel-play:before, .skycon--carousel-play:before {
-  content: "\E007"; }
+.skycom-11 .cushioned {
+  padding: 1.91939%; }
 
-.skycon-chevron-down:before, .skycon--chevron-down:before {
-  content: "\E008"; }
+.skycom-11 {
+  width: 91.40351%; }
 
-.skycon-chevron-left:before, .skycon--chevron-left:before {
-  content: "\E009"; }
+.skycom-10 .cushioned {
+  padding: 2.11864%; }
 
-.skycon-chevron-up:before, .skycon--chevron-up:before {
-  content: "\E00A"; }
+.skycom-10 {
+  width: 82.80702%; }
 
-.skycon-chevron:before, .skycon--chevron:before {
-  content: "\E00B"; }
+.skycom-9 .cushioned {
+  padding: 2.36407%; }
 
-.skycon-close:before, .skycon--close:before {
-  content: "\E00C"; }
+.skycom-9 {
+  width: 74.21053%; }
 
-.skycon-cloud:before, .skycon--cloud:before {
-  content: "\E00D"; }
+.skycom-8 .cushioned {
+  padding: 2.6738%; }
 
-.skycon-download:before, .skycon--download:before {
-  content: "\E00E"; }
+.skycom-8 {
+  width: 65.61404%; }
 
-.skycon-edit:before, .skycon--edit:before {
-  content: "\E00F"; }
+.skycom-7 .cushioned {
+  padding: 3.07692%; }
 
-.skycon-expand:before, .skycon--expand:before {
-  content: "\E010"; }
+.skycom-7 {
+  width: 57.01754%; }
 
-.skycon-facebook:before, .skycon--facebook:before {
-  content: "\E011"; }
+.skycom-6 .cushioned {
+  padding: 3.62319%; }
 
-.skycon-gallery:before, .skycon--gallery:before {
-  content: "\E012"; }
+.skycom-6 {
+  width: 48.42105%; }
 
-.skycon-google-plus:before, .skycon--google-plus:before {
-  content: "\E013"; }
+.skycom-5 .cushioned {
+  padding: 4.40529%; }
 
-.skycon-home:before, .skycon--home:before {
-  content: "\E014"; }
+.skycom-5 {
+  width: 39.82456%; }
 
-.skycon-info:before, .skycon--info:before {
-  content: "\E015"; }
+.skycom-4 .cushioned {
+  padding: 5.61798%; }
 
-.skycon-mail:before, .skycon--mail:before {
-  content: "\E016"; }
+.skycom-4 {
+  width: 31.22807%; }
 
-.skycon-menu:before, .skycon--menu:before {
-  content: "\E017"; }
+.skycom-3 .cushioned {
+  padding: 7.75194%; }
 
-.skycon-minify:before, .skycon--minify:before {
-  content: "\E018"; }
+.skycom-3 {
+  width: 22.63158%; }
 
-.skycon-mouse:before, .skycon--mouse:before {
-  content: "\E019"; }
+.skycom-2 .cushioned {
+  padding: 12.5%; }
 
-.skycon-never-miss:before, .skycon--never-miss:before {
-  content: "\E01A"; }
+.skycom-2 {
+  width: 14.03509%; }
 
-.skycon-on-demand:before, .skycon--on-demand:before {
-  content: "\E01B"; }
+.skycom-1 .cushioned {
+  padding: 32.25806%; }
 
-.skycon-pending:before, .skycon--pending:before {
-  content: "\E01C"; }
+.skycom-1 {
+  width: 5.4386%; }
 
-.skycon-phone:before, .skycon--phone:before {
-  content: "\E01D"; }
+.skycom-offset1, .skycom-offset1:first-child {
+  margin-left: 8.59649%; }
 
-.skycon-plus-circle:before, .skycon--plus-circle:before {
-  content: "\E01E"; }
+.skycom-offset1.alpha {
+  margin-left: 5.4386%; }
 
-.skycon-remote-download:before, .skycon--remote-download:before {
-  content: "\E01F"; }
+.skycom-offset2, .skycom-offset2:first-child {
+  margin-left: 17.19298%; }
 
-.skycon-remote-record:before, .skycon--remote-record:before {
-  content: "\E020"; }
+.skycom-offset2.alpha {
+  margin-left: 14.03509%; }
 
-.skycon-search:before, .skycon--search:before {
-  content: "\E021"; }
+.skycom-offset3, .skycom-offset3:first-child {
+  margin-left: 25.78947%; }
 
-.skycon-share:before, .skycon--share:before {
-  content: "\E022"; }
+.skycom-offset3.alpha {
+  margin-left: 22.63158%; }
 
-.skycon-sky-go:before, .skycon--sky-go:before {
-  content: "\E023"; }
+.skycom-offset4, .skycom-offset4:first-child {
+  margin-left: 34.38596%; }
 
-.skycon-sky-plus:before, .skycon--sky-plus:before {
-  content: "\E024"; }
+.skycom-offset4.alpha {
+  margin-left: 31.22807%; }
 
-.skycon-sky:before, .skycon--sky:before {
-  content: "\E025"; }
+.skycom-offset5, .skycom-offset5:first-child {
+  margin-left: 42.98246%; }
 
-.skycon-speech-bubble:before, .skycon--speech-bubble:before {
-  content: "\E026"; }
+.skycom-offset5.alpha {
+  margin-left: 39.82456%; }
 
-.skycon-tick:before, .skycon--tick:before {
-  content: "\E027"; }
+.skycom-offset6, .skycom-offset6:first-child {
+  margin-left: 51.57895%; }
 
-.skycon-tv:before, .skycon--tv:before {
-  content: "\E028"; }
+.skycom-offset6.alpha {
+  margin-left: 48.42105%; }
 
-.skycon-twitter-favourite:before, .skycon--twitter-favourite:before {
-  content: "\E029"; }
+.skycom-offset7, .skycom-offset7:first-child {
+  margin-left: 60.17544%; }
 
-.skycon-twitter-follow:before, .skycon--twitter-follow:before {
-  content: "\E02A"; }
+.skycom-offset7.alpha {
+  margin-left: 57.01754%; }
 
-.skycon-twitter-reply:before, .skycon--twitter-reply:before {
-  content: "\E02B"; }
+.skycom-offset8, .skycom-offset8:first-child {
+  margin-left: 68.77193%; }
 
-.skycon-twitter-retweet:before, .skycon--twitter-retweet:before {
-  content: "\E02C"; }
+.skycom-offset8.alpha {
+  margin-left: 65.61404%; }
 
-.skycon-twitter:before, .skycon--twitter:before {
-  content: "\E02D"; }
+.skycom-offset9, .skycom-offset9:first-child {
+  margin-left: 77.36842%; }
 
-.skycon-user-profile:before, .skycon--user-profile:before {
-  content: "\E02E"; }
+.skycom-offset9.alpha {
+  margin-left: 74.21053%; }
 
-.skycon-video-play:before, .skycon--video-play:before {
-  content: "\E02F"; }
+.skycom-offset10, .skycom-offset10:first-child {
+  margin-left: 85.96491%; }
 
-.skycon-volume:before, .skycon--volume:before {
-  content: "\E030"; }
+.skycom-offset10.alpha {
+  margin-left: 82.80702%; }
 
-.skycon-warning:before, .skycon--warning:before {
-  content: "\E031"; }
+.skycom-offset11, .skycom-offset11:first-child {
+  margin-left: 94.5614%; }
 
-.skycon-whatsapp:before, .skycon--whatsapp:before {
-  content: "\E032"; }
+.skycom-offset11.alpha {
+  margin-left: 91.40351%; }
 
-body .hover-colour:hover .skycon-sky-go, body .colour.skycon-sky-go, body .skycon--colour__hover:hover .skycon--sky-go, body .skycon--colour.skycon--sky-go {
-  color: #44ad3a; }
-body .hover-colour:hover .skycon-remote-record, body .colour.skycon-remote-record, body .skycon--colour__hover:hover .skycon--remote-record, body .skycon--colour.skycon--remote-record {
-  color: #ed1c24; }
-body .hover-colour:hover .skycon-never-miss, body .colour.skycon-never-miss, body .skycon--colour__hover:hover .skycon--never-miss, body .skycon--colour.skycon--never-miss {
-  color: #0077ae; }
-body .hover-colour:hover .skycon-warning, body .colour.skycon-warning, body .skycon--colour__hover:hover .skycon--warning, body .skycon--colour.skycon--warning {
-  color: #D21717; }
-body .hover-colour:hover .skycon-google-plus, body .colour.skycon-google-plus, body .skycon--colour__hover:hover .skycon--google-plus, body .skycon--colour.skycon--google-plus {
-  color: #dd4c38; }
-body .hover-colour:hover .skycon-twitter, body .colour.skycon-twitter, body .skycon--colour__hover:hover .skycon--twitter, body .skycon--colour.skycon--twitter {
-  color: #25a8e0; }
-body .hover-colour:hover .skycon-facebook, body .colour.skycon-facebook, body .skycon--colour__hover:hover .skycon--facebook, body .skycon--colour.skycon--facebook {
-  color: #3b5998; }
-body .hover-colour:hover .skycon-tick, body .colour.skycon-tick, body .skycon--colour__hover:hover .skycon--tick, body .skycon--colour.skycon--tick {
-  color: #6dbb00; }
-body .hover-colour:hover .skycon-chevron, body .colour.skycon-chevron, body .skycon--colour__hover:hover .skycon--chevron, body .skycon--colour.skycon--chevron {
-  color: #0070a5; }
-body .hover-colour:hover .skycon-chevron-up, body .colour.skycon-chevron-up, body .skycon--colour__hover:hover .skycon--chevron-up, body .skycon--colour.skycon--chevron-up {
-  color: #0070a5; }
-body .hover-colour:hover .skycon-chevron-down, body .colour.skycon-chevron-down, body .skycon--colour__hover:hover .skycon--chevron-down, body .skycon--colour.skycon--chevron-down {
-  color: #0070a5; }
-body .hover-colour:hover .skycon-at, body .colour.skycon-at, body .skycon--colour__hover:hover .skycon--at, body .skycon--colour.skycon--at {
-  color: #0073c5; }
-body .hover-colour:hover .skycon-cloud, body .colour.skycon-cloud, body .skycon--colour__hover:hover .skycon--cloud, body .skycon--colour.skycon--cloud {
-  color: #0073c5; }
-body .hover-colour:hover .skycon-on-demand, body .colour.skycon-on-demand, body .skycon--colour__hover:hover .skycon--on-demand, body .skycon--colour.skycon--on-demand {
-  color: #0073c5; }
-body .hover-colour:hover .skycon-sky-plus, body .colour.skycon-sky-plus, body .skycon--colour__hover:hover .skycon--sky-plus, body .skycon--colour.skycon--sky-plus {
-  color: #0073c5; }
-body .hover-colour:hover .skycon-mouse, body .colour.skycon-mouse, body .skycon--colour__hover:hover .skycon--mouse, body .skycon--colour.skycon--mouse {
-  color: #0073c5; }
-body .hover-colour:hover .skycon-tv, body .colour.skycon-tv, body .skycon--colour__hover:hover .skycon--tv, body .skycon--colour.skycon--tv {
-  color: #0073c5; }
-body .hover-colour:hover .skycon-phone, body .colour.skycon-phone, body .skycon--colour__hover:hover .skycon--phone, body .skycon--colour.skycon--phone {
-  color: #0073c5; }
-body .hover-colour:hover .skycon-edit, body .colour.skycon-edit, body .skycon--colour__hover:hover .skycon--edit, body .skycon--colour.skycon--edit {
-  color: #0073c5; }
-body .hover-colour:hover .skycon-share, body .colour.skycon-share, body .skycon--colour__hover:hover .skycon--share, body .skycon--colour.skycon--share {
-  color: #0073c5; }
-body .hover-colour:hover .skycon-mail, body .colour.skycon-mail, body .skycon--colour__hover:hover .skycon--mail, body .skycon--colour.skycon--mail {
-  color: #0073c5; }
-body .hover-colour:hover .skycon-pending, body .colour.skycon-pending, body .skycon--colour__hover:hover .skycon--pending, body .skycon--colour.skycon--pending {
-  color: #6dbb00; }
-body .hover-colour:hover .skycon-whatsapp, body .colour.skycon-whatsapp, body .skycon--colour__hover:hover .skycon--whatsapp, body .skycon--colour.skycon--whatsapp {
-  color: #34AF23; }
+.lt-ie9 body, body.lt-ie9 {
+  min-width: 1212px; }
+  .lt-ie9 body .skycom-12, body.lt-ie9 .skycom-12 {
+    width: 100%; }
+  .lt-ie9 body .skycom-11, body.lt-ie9 .skycom-11 {
+    width: 91.4%; }
+  .lt-ie9 body .skycom-10, body.lt-ie9 .skycom-10 {
+    width: 82.8%; }
+  .lt-ie9 body .skycom-9, body.lt-ie9 .skycom-9 {
+    width: 74.2%; }
+  .lt-ie9 body .skycom-8, body.lt-ie9 .skycom-8 {
+    width: 65.5%; }
+  .lt-ie9 body .skycom-7, body.lt-ie9 .skycom-7 {
+    width: 57%; }
+  .lt-ie9 body .skycom-6, body.lt-ie9 .skycom-6 {
+    width: 48.4%; }
+  .lt-ie9 body .skycom-5, body.lt-ie9 .skycom-5 {
+    width: 39.8%; }
+  .lt-ie9 body .skycom-4, body.lt-ie9 .skycom-4 {
+    width: 31.1%; }
+  .lt-ie9 body .skycom-3, body.lt-ie9 .skycom-3 {
+    width: 22.6%; }
+  .lt-ie9 body .skycom-2, body.lt-ie9 .skycom-2 {
+    width: 14%; }
+  .lt-ie9 body .skycom-1, body.lt-ie9 .skycom-1 {
+    width: 5.35%; }
+
+@media (max-width: 767px) {
+  body {
+    width: 100%;
+    min-width: 320px; }
+
+  .skycom-12, .skycom-11, .skycom-10, .skycom-9, .skycom-8, .skycom-7, .skycom-6, .skycom-5, .skycom-4, .skycom-3, .skycom-2, .skycom-1 {
+    width: 100%;
+    margin-left: 0; }
+
+  .skycom-12 .cushioned, .skycom-11 .cushioned, .skycom-10 .cushioned, .skycom-9 .cushioned, .skycom-8 .cushioned, .skycom-7 .cushioned, .skycom-6 .cushioned, .skycom-5 .cushioned, .skycom-4 .cushioned, .skycom-3 .cushioned, .skycom-2 .cushioned, .skycom-1 .cushioned {
+    padding: 3.15789%; }
+
+  .skycom-12-mobile, .skycom-11-mobile, .skycom-10-mobile, .skycom-9-mobile, .skycom-8-mobile, .skycom-7-mobile, .skycom-6-mobile, .skycom-5-mobile, .skycom-4-mobile, .skycom-3-mobile, .skycom-2-mobile, .skycom-1-mobile {
+    float: left;
+    margin-left: 3.15789%; }
+
+  .alpha-mobile, [class*=skycom-offset], [class*=skycom-offset]:first-child, .skycom-12-mobile:first-child, .skycom-11-mobile:first-child, .skycom-10-mobile:first-child, .skycom-9-mobile:first-child, .skycom-8-mobile:first-child, .skycom-7-mobile:first-child, .skycom-6-mobile:first-child, .skycom-5-mobile:first-child, .skycom-4-mobile:first-child, .skycom-3-mobile:first-child, .skycom-2-mobile:first-child, .skycom-1-mobile:first-child {
+    margin-left: 0;
+    clear: left; }
+
+  .skycom-12-mobile {
+    width: 100%; }
+
+  .skycom-11-mobile {
+    width: 91.40351%; }
+
+  .skycom-10-mobile {
+    width: 82.80702%; }
+
+  .skycom-9-mobile {
+    width: 74.21053%; }
+
+  .skycom-8-mobile {
+    width: 65.61404%; }
+
+  .skycom-7-mobile {
+    width: 57.01754%; }
+
+  .skycom-6-mobile {
+    width: 48.42105%; }
+
+  .skycom-5-mobile {
+    width: 39.82456%; }
+
+  .skycom-4-mobile {
+    width: 31.22807%; }
+
+  .skycom-3-mobile {
+    width: 22.63158%; }
+
+  .skycom-2-mobile {
+    width: 14.03509%; }
+
+  .skycom-1-mobile {
+    width: 5.4386%; }
+
+  .skycom-12-mobile .cushioned {
+    padding: 1.75439%; }
+
+  .skycom-11-mobile .cushioned {
+    padding: 1.91939%; }
+
+  .skycom-10-mobile .cushioned {
+    padding: 2.11864%; }
+
+  .skycom-9-mobile .cushioned {
+    padding: 2.36407%; }
+
+  .skycom-8-mobile .cushioned {
+    padding: 2.6738%; }
+
+  .skycom-7-mobile .cushioned {
+    padding: 3.07692%; }
+
+  .skycom-6-mobile .cushioned {
+    padding: 3.62319%; }
+
+  .skycom-5-mobile .cushioned {
+    padding: 4.40529%; }
+
+  .skycom-4-mobile .cushioned {
+    padding: 5.61798%; }
+
+  .skycom-3-mobile .cushioned {
+    padding: 7.75194%; }
+
+  .skycom-2-mobile .cushioned {
+    padding: 12.5%; }
+
+  .skycom-1-mobile .cushioned {
+    padding: 32.25806%; }
+
+  body .skycom-container-mobile {
+    width: 94.05941%; }
+
+  body .skycom-container.bleed-mobile {
+    width: 100%; }
+ }
 
 /* Common demo Sass here */
 .demo-block {
@@ -251,6 +322,16 @@ body .hover-colour:hover .skycon-whatsapp, body .colour.skycon-whatsapp, body .s
   overflow: hidden;
   display: block; }
 
+code {
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px; }
+
 .demo-hex {
   text-align: left;
   margin-bottom: 10px; }
@@ -266,10 +347,18 @@ body .hover-colour:hover .skycon-whatsapp, body .colour.skycon-whatsapp, body .s
 
 .demo-smash-img {
   background-image: url("../images/smash.jpg");
-  padding: 80px 50px;
-  margin-bottom: 10px; }
+  padding: 15px;
+  margin-bottom: 10px;
+  background-size: 100%;
+  width: 50%; }
+  .demo-smash-img p {
+    margin: 0; }
 
 .demo-beckham-img {
   background-image: url("../images/beckham.jpg");
-  padding: 80px 50px;
-  margin-bottom: 10px; }
+  padding: 15px;
+  margin-bottom: 10px;
+  background-size: 100%;
+  width: 50%; }
+  .demo-beckham-img p {
+    margin: 0; }
