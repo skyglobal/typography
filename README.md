@@ -5,24 +5,21 @@
 
 See http://skyglobal.github.io/typography/ for a demo
 
-## Usage
+## Quick-Start
 
-### As CSS
+Include the Typography assets in your project either as **Static Resources**
 
-http://web-toolkit.global.sky.com/components/typography/0.1.0/css/typography.css
+```html
+<link rel="stylesheet" href="http://web-toolkit.global.sky.com/components/typography/0.1.0/css/typography.css" />
+```
+You can also replace have the fonts individually if you so desire:
+ * http://web-toolkit.global.sky.com/components/typography/0.1.0/css/luna.css
+ * http://web-toolkit.global.sky.com/components/typography/0.1.0/css/sky-text-medium.css
+ * http://web-toolkit.global.sky.com/components/typography/0.1.0/css/sky-text-regular.css
 
-You can also replace `typography.css` with the specific font you are after:
- * luna.css
- * sky-text-medium.css
- * sky-text-regular.css
-
-### As a Sass Module
+or alternatively, **Via Bower**
 
 `bower install --save-dev bskyb-typography`
-
-### Locally
-
-`gulp serve`
 
 ## Contribution
 
