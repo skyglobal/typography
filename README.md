@@ -1,9 +1,7 @@
 [Typography](http://skyglobal.github.io/typography/) 
 ========================
 
-> Brand approved typography for use across Sky.com
-
-See http://skyglobal.github.io/typography/ for a demo
+> Brand approved typography for use across Sky.com. [Demo page](http://skyglobal.github.io/typography/)
 
 ## Quick-Start
 
