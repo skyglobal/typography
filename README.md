@@ -3,6 +3,8 @@
 
 > Brand approved typography for use across Sky.com. [Demo page](http://skyglobal.github.io/typography/)
 
+**DEPRECATED : Please use [core](https://github.com/skyglobal/core)** 
+
 ## Quick-Start
 
 Include the Typography assets in your project either as **Static Resources**
